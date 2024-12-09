@@ -1,9 +1,9 @@
 # Database Relationships
 <h3>Topics to be covered :</h3>
 <ul>
-<li>One to One Relationships<li>
-<li>One to Many Relationships<li>
-<li>Many to Many Relationships<li>
+<li>One to One Relationships</li>
+<li>One to Many Relationships</li>
+<li>Many to Many Relationships</li>
 </ul>
 
 One to One Relationships: In one to one relationship ..let there be two table that are connected to each other so in this case one table consist a primary key that comes out to be foreign key for another table...so here one to one connection is formed..
