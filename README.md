@@ -17,3 +17,13 @@ One to One Relationships: In one to one relationship ..let there be two table th
 In this we take ex of uber,ola ,swiggy,zomato ..yha pr hm user ka name rakhte h addresses rakhte h to isme ek user jyada se jyada 2,4 addresses hi store krata h
  # One to Many / Approach 2
  Store a reference to the child document inside parent
+
+  ## populate in mongoose
+  <img src="/assets/img1.png">
+    <img src="/assets/img2.png">
+
+ //output terminal me to full object jayega mongoose me but hm mongodb db dekhenge to waha sirf items ki object id jayegi naki whole object
+
+//populate in mongoose : isse hm jo database me object id data stored hota h uske through hm whole data ko fetch kr skte h
+
+# One to Many (Approach 3 One to squillions)
