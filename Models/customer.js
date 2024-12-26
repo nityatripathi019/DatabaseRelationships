@@ -52,7 +52,7 @@ const findCustomer = async () => {
     let result = await Customer.find({}).populate("order");
     console.log(result[0]);
 }
-findCustomer();
+// findCustomer();
 //output terminal me to full object jayega mongoose me but hm mongodb db dekhenge to waha sirf items ki object id jayegi naki whole object
 
 //populate in mongoose : isse hm jo database me object id data stored hota h uske through hm whole data ko fetch kr skte h
@@ -69,3 +69,23 @@ findCustomer();
 // }
 
 // addOrders();
+
+//adding customer in database customer in database 
+const addCust = async () => {
+    let newCust = new Customer({
+        name: "karan Arjun"
+    })
+
+    let newOrder = new Order({
+        item: "Pizza",
+        price: 250
+    })
+
+    newCust.order.push(newOrder);
+
+    await newCust.save();
+    await newOrder.save();
+    console.log("added new customer");
+}
+
+addCust();
